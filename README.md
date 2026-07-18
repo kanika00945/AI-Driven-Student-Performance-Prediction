@@ -9,6 +9,13 @@ An AI-powered web application that predicts a student's final academic performan
 The AI-Driven Student Performance Prediction System is designed to help evaluate a student's academic performance using Machine Learning and Generative AI. Based on the student's academic information, the application predicts the expected final grade (G3), provides AI-powered study recommendations, classifies the student's performance level, and generates a downloadable PDF report.
 
 ---
+## 🚀 Live Demo
+
+Experience the application online:
+
+https://ai-driven-student-performance-prediction-c3nh.onrender.com
+
+---
 
 ## Features
 
