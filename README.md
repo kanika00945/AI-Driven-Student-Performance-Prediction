@@ -14,9 +14,7 @@ The AI-Driven Student Performance Prediction System is designed to help evaluate
 Experience the application online:
 
 https://ai-driven-student-performance-prediction-c3nh.onrender.com
-
 ---
-
 ## Features
 
 - Predicts the student's final academic grade using Machine Learning.
