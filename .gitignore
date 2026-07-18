@@ -1,17 +1,18 @@
-# Python
+
 __pycache__/
 *.pyc
 
-# Virtual Environment
 venv/
 .env
 
-# VS Code
+
 .vscode/
 
-# Streamlit
+
 .streamlit/
 
-# OS Files
+
 .DS_Store
 Thumbs.db
+
+Student_Performance_Report.pdf

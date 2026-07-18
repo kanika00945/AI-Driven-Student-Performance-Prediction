@@ -8,10 +8,6 @@ load_dotenv()
 # Read API Key
 api_key = os.getenv("GOOGLE_API_KEY")
 
-print("=" * 50)
-# print("GOOGLE_API_KEY:", api_key)
-print("=" * 50)
-
 # Create Gemini Client
 client = genai.Client(api_key=api_key)
 

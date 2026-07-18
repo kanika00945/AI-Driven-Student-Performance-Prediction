@@ -1,36 +1,38 @@
 # AI-Driven Student Performance Prediction System
 
-A Machine Learning and Generative AI-based web application that predicts student academic performance using academic data. The application integrates the Google Gemini API to generate intelligent performance analysis, personalized recommendations, and a downloadable PDF report.
+An AI-powered web application that predicts a student's final academic performance using Machine Learning. The system uses a Random Forest Regression model to estimate the final grade and integrates Google's Gemini API to generate personalized academic recommendations. Users can also download a detailed PDF performance report.
 
 ---
 
 ## Overview
 
-This project combines Machine Learning and Generative AI to help evaluate student performance. Users can enter academic details through a Streamlit-based interface, receive prediction results, view AI-generated insights, and download a detailed PDF report.
+The AI-Driven Student Performance Prediction System is designed to help evaluate a student's academic performance using Machine Learning and Generative AI. Based on the student's academic information, the application predicts the expected final grade (G3), provides AI-powered study recommendations, classifies the student's performance level, and generates a downloadable PDF report.
 
 ---
 
-## Key Features
+## Features
 
-- Machine Learning-based student performance prediction
-- Interactive Streamlit web application
-- AI-powered performance analysis using Google Gemini API
-- Personalized improvement recommendations
-- Downloadable PDF report generation
-- Clean and user-friendly interface
-- Fast prediction using a pre-trained model
+- Predicts the student's final academic grade using Machine Learning.
+- Uses the Random Forest Regression algorithm for prediction.
+- Interactive and user-friendly Streamlit web application.
+- AI-generated academic analysis and study recommendations using Google Gemini.
+- Classifies student performance (Excellent, Good, Average, Poor).
+- Generates a professional PDF performance report.
+- Modern and responsive user interface.
 
 ---
 
 ## Technology Stack
 
-- **Programming Language:** Python
-- **Machine Learning:** Scikit-learn
-- **Web Framework:** Streamlit
-- **Data Processing:** Pandas, NumPy
-- **Generative AI:** Google Gemini API
-- **PDF Generation:** ReportLab
-- **Model Serialization:** Joblib
+- Python
+- Streamlit
+- Scikit-learn
+- Pandas
+- NumPy
+- Joblib
+- Google Gemini API
+- ReportLab
+- Python-dotenv
 
 ---
 
@@ -40,13 +42,13 @@ This project combines Machine Learning and Generative AI to help evaluate studen
 AI-Driven-Student-Performance-Prediction/
 │
 ├── app.py
-├── train_model.py
 ├── api_helper.py
 ├── pdf_report.py
+├── train_model.py
 ├── model.pkl
 ├── student_data.csv
 ├── requirements.txt
-├── .env
+├── .gitignore
 └── README.md
 ```
 
@@ -57,7 +59,7 @@ AI-Driven-Student-Performance-Prediction/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/<your-github-username>/AI-Driven-Student-Performance-Prediction.git
+git clone https://github.com/kanika00945/AI-Driven-Student-Performance-Prediction.git
 ```
 
 ### Navigate to the project directory
@@ -66,15 +68,13 @@ git clone https://github.com/<your-github-username>/AI-Driven-Student-Performanc
 cd AI-Driven-Student-Performance-Prediction
 ```
 
-### Install dependencies
+### Install the required packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Configure environment variables
-
-Create a `.env` file in the project root.
+### Create a `.env` file
 
 ```env
 GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
@@ -86,60 +86,63 @@ GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 streamlit run app.py
 ```
 
-The application will be available at:
-
-```
-http://localhost:8501
-```
-
 ---
 
-## Machine Learning Workflow
+## Machine Learning Model
 
-1. Load the student dataset
-2. Preprocess the data
-3. Train the Machine Learning model
-4. Save the trained model
-5. Accept user input through the Streamlit interface
-6. Predict student performance
-7. Generate AI-powered analysis using Gemini
-8. Export the prediction report as a PDF
+**Algorithm Used**
 
----
+- Random Forest Regressor
 
-## Input Parameters
+### Input Features
 
-The prediction model uses academic and study-related information, including:
+- Age
+- Study Time
+- Previous Failed Subjects
+- Absences
+- Internal Assessment (G1)
+- External Assessment (G2)
 
-- Study Hours
-- Attendance
-- Previous Scores
-- Sleep Hours
-- Extracurricular Activities
-- Sample Papers Practiced
+### Output
 
----
-
-## Output
-
-The application provides:
-
-- Predicted Student Performance
-- AI-generated Performance Analysis
-- Personalized Recommendations
+- Predicted Final Grade (G3)
+- Student Performance Level
+- AI-generated Academic Analysis
+- Personalized Study Recommendations
 - Downloadable PDF Report
+
+---
+
+## Application Workflow
+
+1. Enter the student's personal information.
+2. Provide academic details.
+3. Click **Predict Performance**.
+4. View the predicted final grade.
+5. Read the AI-generated academic recommendations.
+6. Download the PDF performance report.
 
 ---
 
 ## Security
 
-Store your Gemini API key in the `.env` file.
+Store your Google Gemini API key in a `.env` file.
 
 ```env
 GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
-> **Do not upload your `.env` file or API key to GitHub.**
+The `.env` file is excluded from Git using `.gitignore` and should never be uploaded to GitHub.
+
+---
+
+## Future Improvements
+
+- Support multiple Machine Learning models.
+- Performance visualization using charts.
+- Student prediction history.
+- Model comparison.
+- Multi-user support.
 
 ---
 
@@ -147,10 +150,10 @@ GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 
 **Kanika Chauhan**
 
-B.Tech in Computer Science & Engineering (Artificial Intelligence & Machine Learning)
+Bachelor of Technology (Computer Science & Engineering – Artificial Intelligence & Machine Learning)
 
 ---
 
-## License
+## Disclaimer
 
-This project is developed for educational and learning purposes.
+This project was developed for educational, internship, and portfolio purposes.
