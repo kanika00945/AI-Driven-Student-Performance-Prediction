@@ -96,7 +96,9 @@ streamlit run app.py
 
 ### Input Features
 
--Student Name
+### Input Features
+
+- Student Name
 - Age
 - Study Time
 - Previous Failed Subjects
